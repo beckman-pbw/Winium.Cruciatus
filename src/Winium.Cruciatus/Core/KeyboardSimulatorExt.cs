@@ -64,6 +64,16 @@
         }
 
         /// <summary>
+        /// Sends the tab key.
+        /// </summary>
+        /// <returns>This keyboard instance.</returns>
+        public IKeyboard SendTab()
+        {
+            this.KeyPress(VirtualKeyCode.TAB);
+            return this;
+        }
+
+        /// <summary>
         /// Эмулирует нажатие сочетания двух кнопок keyCode1 + keyCode2.
         /// </summary>
         /// <param name="keyCode1">

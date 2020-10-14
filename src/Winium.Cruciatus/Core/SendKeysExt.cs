@@ -45,6 +45,11 @@
         public const string Escape = "{ESCAPE}";
 
         /// <summary>
+        /// Sends the Tab key.
+        /// </summary>
+        public const string Tab = "{Tab}";
+
+        /// <summary>
         /// Кнопка +
         /// </summary>
         public const char Shift = '+';
@@ -88,6 +93,15 @@
         public IKeyboard KeyUp(VirtualKeyCode keyCode)
         {
             throw new NotImplementedException();
+        }
+
+        /// <summary>
+        /// Send the Tab key.
+        /// </summary>
+        /// <returns></returns>
+        public IKeyboard SendTab()
+        {
+            return this.SendKeysPrivate(Tab);
         }
 
         /// <summary>

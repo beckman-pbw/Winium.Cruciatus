@@ -125,7 +125,7 @@
 
         #region Properties
 
-        internal AutomationElement Instance
+        public AutomationElement Instance
         {
             get
             {
@@ -143,13 +143,13 @@
                 return this.instance;
             }
 
-            set
+            private set
             {
                 this.instance = value;
             }
         }
 
-        internal CruciatusElement Parent { get; set; }
+        public CruciatusElement Parent { get; private set; }
 
         #endregion
 

@@ -30,6 +30,11 @@
         IKeyboard KeyUp(VirtualKeyCode keyCode);
 
         /// <summary>
+        /// Send a tab key.
+        /// </summary>
+        IKeyboard SendTab();
+
+        /// <summary>
         /// Эмулирует нажатие кнопки Backspace.
         /// </summary>
         IKeyboard SendBackspace();
