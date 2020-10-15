@@ -1,18 +1,18 @@
-﻿namespace Winium.Cruciatus.Helpers.XPath
+﻿#region using
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Windows.Automation;
+using System.Xml.XPath;
+
+using Winium.Cruciatus.Elements;
+using Winium.Cruciatus.Exceptions;
+
+#endregion
+
+namespace Winium.Cruciatus.Helpers.XPath
 {
-    #region using
-
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Windows.Automation;
-    using System.Xml.XPath;
-
-    using Winium.Cruciatus.Elements;
-    using Winium.Cruciatus.Exceptions;
-
-    #endregion
-
     internal class ElementItem : XPathItem
     {
         #region Fields
